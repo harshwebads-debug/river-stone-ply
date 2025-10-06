@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>River Stone Ply</title>
+    <link rel="stylesheet" href="assests/css/index.css">
+
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Montserrat (Headings) -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Open Sans (Content) -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+    <link rel="shortcut icon" href="assests/images/logo/river-stone-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- HEAD: AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+</head>
+
+<body>
+
+    <!-- ===== Fixed Contact Icons ===== -->
+    <div class="fixed-icons">
+        <a href="tel:+18500722526" class="icon call" target="_blank"><i class="fas fa-phone-alt"></i></a>
+        <a href="mailto:riverstoneply.com" class="icon mail" target="_blank"><i class="fas fa-envelope"></i></a>
+    </div>
+
+
+    <!-- Sticker HTML -->
+    <img src="assets/images/logo/agent.png" alt="Sticker" class="fixed-sticker">
+
+
+    <!-- fix icons -->
+    <a href="https://wa.me/919914827500" target="_blank" class="whatsapp-btn">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- fix icons -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Topbar Contact + Social -->
+    <div class="topbar info-topbar">
+        <div class="info-left">
+            <span><i class="fas fa-phone-alt"></i>18500722526</span>
+            <span><i class="fas fa-envelope"></i>riverstoneply.com</span>
+        </div>
+        <div class="info-right">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+
+
+    <!-- desktop navbar -->
+    <nav class="navbar">
+        <button id="menuToggler">☰</button>
+        <div class="navbar-links">
+            <a href="#" class="active">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Products</a>
+            <a href="#">Blogs</a>
+            <a href="#">Gallery</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <a class="navbar-brand" href="#"><img src="assests/images/logo/river-stone-logo.png" alt="Logo"></a>
+    </nav>
+
+    <!-- Mega overlay -->
+    <div class="mega-overlay" id="megaOverlay">
+        <button class="mega-close" id="megaClose">&times;</button>
+        <div class="mega-left">
+            <h3>Contact Us</h3>
+            <form>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <textarea placeholder="Message"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3488.426308420326!2d77.36980057536911!3d28.626572684351395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce550adec536d%3A0xfc9a748d99d8bd07!2sITHUM%20TOWER%2C%20GALAXY%20BUSINESS%20PARK%2C%20Block%20A%2C%20Industrial%20Area%2C%20Sector%2062%2C%20Noida%2C%20Uttar%20Pradesh%20201309!5e1!3m2!1sen!2sin!4v1759559079151!5m2!1sen!2sin"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </div>
+        <div class="mega-right">
+            <div class="logo"><img src="assests/images/logo/river-stone-logo.png" alt="Logo"></div>
+            <div class="mega-links">
+                <a href="#" class="active">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Products</a>
+                <a href="#">Blogs</a>
+                <a href="#">Gallery</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+
+
+
+
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- desktop navbar -->
+
+
+
+
+
+
+
+    <!-- Mobile / Tablet Navbar -->
+    <nav class="rsp-nav">
+        <button id="rsp-menu-btn"><i class="fas fa-bars"></i></button>
+        <a href="#" class="rsp-logo"><img src="assests/images/logo/river-stone-logo.png" alt="River Stone Plywood"></a>
+    </nav>
+
+    <!-- Overlay Menu -->
+    <div class="rsp-overlay" id="rspOverlay">
+        <div class="rsp-overlay-wrapper">
+            <ul class="rsp-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li class="rsp-dropdown">
+                    <a href="#">Products <i class="fas fa-chevron-down"></i></a>
+                    <ul class="rsp-submenu">
+                        <li><a href="#">Plywood Type 1</a></li>
+                        <li><a href="#">Plywood Type 2</a></li>
+                        <li><a href="#">Plywood Type 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <div class="rsp-socials">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <button class="rsp-close-btn" id="rspClose"><i class="fas fa-times"></i></button>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- hero section -->
+    <section class="hero-section" data-aos="fade-in" data-aos-duration="1000">
+        <div class="hero-slider" data-aos="zoom-out" data-aos-duration="1200" data-aos-delay="100">
+            <div class="slide active" data-title="River Stone Plywood" data-subtitle="Premium Quality Plywood Solutions" data-content="Discover durable and elegant plywood crafted for your projects. Perfect for furniture, interiors, and construction." style="background-image: url('assests/images/banner/ban-3.jpg');">
+                <div class="overlay"></div>
+            </div>
+
+            <div class="slide" data-title="Elegant Designs" data-subtitle="Stylish & Durable" data-content="Bring your spaces to life with our sleek plywood designs that combine strength and beauty." style="background-image: url('assests/images/banner/ban-2.jpg');">
+                <div class="overlay"></div>
+            </div>
+
+            <div class="slide" data-title="Expert Craftsmanship" data-subtitle="Built to Last" data-content="Our experienced craftsmen ensure every sheet meets the highest standards for longevity and aesthetics." style="background-image: url('assests/images/banner/ban-4.jpg');">
+                <div class="overlay"></div>
+            </div>
+        </div>
+
+        <div class="hero-content" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            <h1 id="slide-title" data-aos="fade-up" data-aos-delay="300">River Stone Plywood</h1>
+            <h3 id="slide-subtitle" data-aos="fade-up" data-aos-delay="400">Premium Quality Plywood Solutions</h3>
+            <p id="slide-content" data-aos="fade-up" data-aos-delay="500">
+                Discover durable and elegant plywood crafted for your projects. Perfect for furniture, interiors, and construction.
+            </p>
+            <a href="#products" class="hero-btn" data-aos="zoom-in" data-aos-delay="600">Explore Products</a>
+        </div>
+
+        <!-- Thumbnail Navigation -->
+        <div class="hero-thumbnails" data-aos="none">
+            <div class="thumb active" data-index="0" style="background-image: url('assests/images/banner/ban-2.jpg');"></div>
+            <div class="thumb" data-index="1" style="background-image: url('assests/images/banner/ban-3.jpg');"></div>
+            <div class="thumb" data-index="2" style="background-image: url('assests/images/banner/ban-4.jpg');"></div>
+        </div>
+    </section>
+    <!-- hero section -->
+
+
+
+
+
+
+
+    <!-- about us -->
+    <section class="about-modern-fixed position-relative" data-aos="fade-in" data-aos-duration="1000">
+        <!-- Background Shapes -->
+        <div class="about-shapes">
+            <div class="shape shape-1" data-aos="zoom-in" data-aos-delay="100"></div>
+            <div class="shape shape-2" data-aos="zoom-in" data-aos-delay="200"></div>
+            <div class="shape shape-3" data-aos="zoom-in" data-aos-delay="300"></div>
+        </div>
+
+        <div class="container-fluid about-container">
+            <div class="row align-items-stretch">
+                <!-- Left Background Image -->
+                <div class="col-lg-6 col-md-none about-left-image" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="150"></div>
+
+                <!-- Right Content -->
+                <div class="col-lg-6 col-md-12 about-content-modern" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+
+                    <h2 data-aos="fade-up" data-aos-delay="250">
+                        Welcome to <span>RIVER STONE PLY</span>
+                    </h2>
+
+                    <p data-aos="fade-up" data-aos-delay="350">
+                        At River Stone Plywood, we blend quality, innovation, and sustainability. Our products are crafted for durability and elegance, serving builders, designers, and homeowners with unmatched excellence.
+                    </p>
+
+                    <div class="content-cards">
+                        <div class="card" data-aos="zoom-in" data-aos-delay="400">
+                            <div class="card-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="#FFD700" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                            </svg>
+                            </div>
+                            <h3 class="about-small-head">Our Mission</h3>
+                            <p>Deliver the highest quality plywood while maintaining eco-friendly practices.</p>
+                        </div>
+
+                        <div class="card" data-aos="zoom-in" data-aos-delay="500">
+                            <div class="card-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="#00AEEF" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 5C7 5 2.73 8.11 1 12c1.73 3.89 6 7 11 7s9.27-3.11 11-7c-1.73-3.89-6-7-11-7zm0 12a5 5 0 110-10 5 5 0 010 10z"/>
+                                <circle cx="12" cy="12" r="2.5" fill="#223463"/>
+                            </svg>
+                            </div>
+                            <h3 class="about-small-head">Our Vision</h3>
+                            <p>To be the most trusted and innovative plywood brand across the nation.</p>
+                        </div>
+
+                        <div class="card" data-aos="zoom-in" data-aos-delay="600">
+                            <div class="card-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="#FF4B5C" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 21s-6-4.35-10-9c-1.5-1.77-1.5-4.26 0-6s4.13-2 5.99 0L12 5l2.01-1.99C15.87 4 18 4.22 19.5 6s1.5 4.23 0 6c-4 4.65-10 9-10 9z"/>
+                            </svg>
+                            </div>
+                            <h3 class="about-small-head">Our Values</h3>
+                            <p>Quality, Sustainability, Innovation, Customer Satisfaction.</p>
+                        </div>
+
+                        <div class="card" data-aos="zoom-in" data-aos-delay="700">
+                            <div class="card-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="#32CD32" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 21h4V9H2v12zm20-11c0-1.11-.89-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L13.17 2 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.11.89 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1z"/>
+                            </svg>
+                            </div>
+                            <h3 class="about-small-head">Why Choose Us?</h3>
+                            <p>Decades of experience, premium products, and client-focused services.</p>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="btn-theme">
+                    Get In Touch
+                </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about us -->
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- our products -->
+    <section class="product-section" data-aos="fade-in" data-aos-duration="900">
+        <div class="container">
+            <div class="heading-wrapper" data-aos="fade-up" data-aos-delay="100">
+                <h2 class="heading-border">Our Products</h2>
+            </div>
+
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">
+                Explore our premium range of products designed for durability, style, and unmatched quality. From classic plywood to innovative alternatives, each product ensures excellence and reliability.
+            </p>
+
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="product-img">
+                        <img src="https://www.plywoodproject.com/cdn/shop/articles/MG_0137_1500x.jpg?v=1709242823" alt="Plywood">
+                        <div class="overlay">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <i class="fa-solid fa-tree"></i>
+                        <h3>Plywood</h3>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="product-img">
+                        <img src="https://www.plywood-india.com/wp-content/uploads/2024/10/block-boards.jpg" alt="Blackboard">
+                        <div class="overlay">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <i class="fa-solid fa-cube"></i>
+                        <h3>Block Board</h3>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="product-img">
+                        <img src="https://www.atootply.com/assets1/images/products/flush-doors.png" alt="Doors">
+                        <div class="overlay">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <i class="fa-solid fa-door-open"></i>
+                        <h3>Doors</h3>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="product-img">
+                        <img src="https://m.media-amazon.com/images/I/71u3F2NZ9gL._UF894,1000_QL80_.jpg" alt="Alternate 303 grade">
+                        <div class="overlay">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <h3>Alternate 303 Grade</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lightbox Modal -->
+        <div class="product-lightbox" id="productLightbox" data-aos="fade-in" data-aos-delay="700">
+            <span class="close-lightbox" id="closeLightbox">&times;</span>
+            <img id="lightboxImg" src="" alt="Product Full View">
+        </div>
+    </section>
+    <!-- our products -->
+
+
+
+
+    <!-- features -->
+    <section class="features-section" data-aos="fade-in" data-aos-duration="900">
+        <h2 class="main-heading" data-aos="fade-up" data-aos-delay="100">
+            PREMIUM, TRUSTED PLYWOOD
+        </h2>
+
+        <p class="sub-heading" data-aos="fade-up" data-aos-delay="200">
+            Designed to meet your needs — our plywood delivers performance, finish, and durability across all applications.
+        </p>
+
+        <div class="features-container">
+            <div class="feature-box" data-aos="zoom-in-up" data-aos-delay="300">
+                <img src="https://plywood.royaletouche.com/_next/image?url=https%3A%2F%2Fcms-plywood.royaletouche.com%2Fuploads%2FWhy_Royale_Touche_is_the_Best_Plywood_Brand_in_India_5a542f40e0.png&w=1920&q=75" alt="Durable Plywood" />
+                <p>premium durability</p>
+            </div>
+
+            <div class="feature-box" data-aos="zoom-in-up" data-aos-delay="400">
+                <img src="https://www.duroply.in/blog/wp-content/uploads/2018/01/plywood-for-home.jpg" alt="Termite Free" />
+                <p>termite resistant</p>
+            </div>
+
+            <div class="feature-box" data-aos="zoom-in-up" data-aos-delay="500">
+                <img src="https://www.duroply.in/blog/wp-content/uploads/2016/06/shutterstock_156389159.jpg" alt="Weather Proof" />
+                <p>weather proof</p>
+            </div>
+
+            <div class="feature-box" data-aos="zoom-in-up" data-aos-delay="600">
+                <img src="https://www.v-sure.eu/media/2e/38/c3/1675413040/Perfect%20Mineral%20Deco_floor.jpg" alt="Fine Finish" />
+                <p>perfect finish</p>
+            </div>
+        </div>
+    </section>
+    <!-- features -->
+
+
+
+
+
+
+
+
+    <!-- gallery of river stone -->
+    <section class="river-stone-d" data-aos="fade-in" data-aos-duration="900">
+        <div class="ml-container">
+            <h1 class="ml-title" data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                River Stone Ply Gallery
+            </h1>
+
+            <p class="ml-tagline" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                Premium Plywood • Doors • Block Boards • Laminates
+            </p>
+
+            <!-- Slider -->
+            <div class="ml-slider-wrapper" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="400">
+
+                <div class="ml-slider">
+                    <div class="ml-slide" data-aos="fade-up" data-aos-delay="500">
+                        <img src="assests/images/gallery/gal-1.jpg" alt="Premium Plywood">
+                    </div>
+                    <div class="ml-slide" data-aos="fade-up" data-aos-delay="600">
+                        <img src="assests/images/gallery/gal-2.jpg" alt="Block Board">
+                    </div>
+                    <div class="ml-slide" data-aos="fade-up" data-aos-delay="700">
+                        <img src="assests/images/gallery/gal-3.jpg" alt="Designer Doors">
+                    </div>
+                    <div class="ml-slide" data-aos="fade-up" data-aos-delay="800">
+                        <img src="assests/images/gallery/gal-4.jpg" alt="Alternate 303 Grade">
+                    </div>
+                    <div class="ml-slide" data-aos="fade-up" data-aos-delay="900">
+                        <img src="assests/images/gallery/gal-5.jpg" alt="Stylish Laminates">
+                    </div>
+                    <div class="ml-slide" data-aos="fade-up" data-aos-delay="1000">
+                        <img src="assests/images/gallery/gal-6.jpg" alt="Stylish Laminates">
+                    </div>
+                </div>
+
+                <!-- Arrows -->
+                <button class="ml-prev" data-aos="fade-right" data-aos-delay="700">&#10094;</button>
+                <button class="ml-next" data-aos="fade-left" data-aos-delay="700">&#10095;</button>
+            </div>
+        </div>
+    </section>
+    <!-- gallery of river stone -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- testimonials -->
+    <section class="testimonial-section" data-aos="fade-in" data-aos-duration="900">
+        <div class="heading-wrapper mb-3" data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-in-out">
+            <h2 class="heading-border">A Word From Our Customers</h2>
+        </div>
+
+        <div class="swiper testimonial-slider" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="200">
+            <div class="swiper-wrapper">
+                <!-- Testimonial 1 -->
+                <div class="swiper-slide testimonial-card" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://media.istockphoto.com/id/1318928248/photo/portrait-of-a-young-man.jpg?s=612x612&w=0&k=20&c=ayy0fWfzLoC20BlYXDQmle1vz0a9Qrv8ssSwE3dLpzA=" alt="Client 1" />
+                    <p class="testimonial-text">
+                        "A company and brand which you can rely on for all your plywood solutions."
+                    </p>
+                    <h3 class="testimonial-name">Mr. Owais Qureshi (Architect)</h3>
+                    <p class="testimonial-company">QUEST DESIGN, SHIVPURI</p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="swiper-slide testimonial-card" data-aos="fade-up" data-aos-delay="400">
+                    <img src="https://53.fs1.hubspotusercontent-na1.net/hub/53/hubfs/Customer-testimonial-page.jpg?width=595&height=400&name=Customer-testimonial-page.jpg" alt="Client 2" />
+                    <p class="testimonial-text">
+                        "We have been dealing with their products for over 5 years. Excellent quality and commendable service."
+                    </p>
+                    <h3 class="testimonial-name">Ms. Anshika Bansal</h3>
+                    <p class="testimonial-company">KANWAR SAIN BABU LAL & SONS, MEERUT</p>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="swiper-slide testimonial-card" data-aos="fade-up" data-aos-delay="500">
+                    <img src="https://tse2.mm.bing.net/th/id/OIP.zvSXeOBBqT7HfydW7FHhEQHaHl?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Client 3" />
+                    <p class="testimonial-text">
+                        "Their innovative product line helps us in large-scale commercial projects with full confidence."
+                    </p>
+                    <h3 class="testimonial-name">Ms. Ritu Sharma</h3>
+                    <p class="testimonial-company">URBAN CREATORS, DELHI</p>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="swiper-slide testimonial-card" data-aos="fade-up" data-aos-delay="600">
+                    <img src="https://www.northernvirginiaendo.com/wp-content/uploads/testimonials-smiling-man.jpg" alt="Client 4" />
+                    <p class="testimonial-text">
+                        "Their plywood gives unmatched strength and finish. One of the best choices we made for interiors."
+                    </p>
+                    <h3 class="testimonial-name">Mr. Karan Mehta</h3>
+                    <p class="testimonial-company">LUXE HOMES, LUCKNOW</p>
+                </div>
+            </div>
+
+            <!-- Arrows -->
+            <div class="swiper-button-prev" data-aos="fade-right" data-aos-delay="800"></div>
+            <div class="swiper-button-next" data-aos="fade-left" data-aos-delay="800"></div>
+
+            <!-- Dots -->
+            <div class="swiper-pagination" data-aos="fade-up" data-aos-delay="1000"></div>
+        </div>
+    </section>
+    <!-- testimonials -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".testimonial-slider", {
+            slidesPerView: 2,
+            spaceBetween: 40,
+            loop: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1
+                },
+                768: {
+                    slidesPerView: 2
+                }
+            }
+        });
+    </script>
+
+    <!-- testimonials  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        const mlSlider = document.querySelector('.ml-slider');
+        const mlSlides = document.querySelectorAll('.ml-slide');
+        const mlPrev = document.querySelector('.ml-prev');
+        const mlNext = document.querySelector('.ml-next');
+
+        let mlIndex = 0;
+
+        function mlShowSlide() {
+            const slideWidth = mlSlides[0].clientWidth + 20; // margin included
+            mlSlider.style.transform = `translateX(${-mlIndex * slideWidth}px)`;
+        }
+
+        mlNext.addEventListener('click', () => {
+            if (mlIndex >= mlSlides.length - 3) mlIndex = 0; // show 3 slides max
+            else mlIndex++;
+            mlShowSlide();
+        });
+
+        mlPrev.addEventListener('click', () => {
+            if (mlIndex <= 0) mlIndex = mlSlides.length - 3;
+            else mlIndex--;
+            mlShowSlide();
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- CTA Section -->
+    <section class="cta-wrapper" data-aos="fade-in" data-aos-duration="1000">
+        <div class="cta-overlay" data-aos="fade-in" data-aos-duration="1200"></div>
+
+        <div class="cta-content" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            <h2 data-aos="fade-up" data-aos-delay="300">
+                Transform Spaces with <span>River Stone Plywood</span>
+            </h2>
+
+            <p data-aos="fade-up" data-aos-delay="400">
+                Premium quality plywood, doors, and boards crafted with durability, innovation, and elegance. Let’s build your dream projects together.
+            </p>
+
+            <div class="cta-buttons">
+                <a href="#contact" class="cta-btn primary-btn" data-aos="zoom-in" data-aos-delay="500">
+                Contact Us
+            </a>
+                <a href="#products" class="cta-btn secondary-btn" data-aos="zoom-in" data-aos-delay="600">
+                Explore Products
+            </a>
+            </div>
+        </div>
+    </section>
+    <!-- CTA Section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- blog -->
+    <section class="blog-section py-5" data-aos="fade-in" data-aos-duration="900">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="heading-border" data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                    Latest Blogs
+                </h2>
+                <p class="blog-subtitle" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    Explore expert insights, design trends & innovations from River Stone Ply
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Blog Card 1 -->
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="blog-card shadow-sm">
+                        <img src="https://trojanply.com/wp-content/uploads/2022/07/plywood-manufacturers-in-India.jpeg" alt="Premium Quality Plywood" class="img-fluid">
+                        <div class="blog-content p-4">
+                            <h5 class="fw-bold" data-aos="fade-up" data-aos-delay="400">
+                                The Strength & Craftsmanship Behind River Stone Plywood
+                            </h5>
+                            <p data-aos="fade-up" data-aos-delay="500">
+                                Built with precision and advanced technology, River Stone Ply delivers unmatched strength, durability, and elegance — the perfect choice for interiors and heavy-duty applications alike.
+                            </p>
+                            <a href="blog.html" class="read-more fw-bold" data-aos="zoom-in" data-aos-delay="600">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Card 2 -->
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="350">
+                    <div class="blog-card shadow-sm">
+                        <img src="https://plywood.royaletouche.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FBlogImage49.daf43fbf.jpg&w=3840&q=75" alt="Waterproof Marine Grade Plywood" class="img-fluid">
+                        <div class="blog-content p-4">
+                            <h5 class="fw-bold" data-aos="fade-up" data-aos-delay="450">
+                                Why River Stone Waterproof Ply is Ideal for Kitchens & Bathrooms
+                            </h5>
+                            <p data-aos="fade-up" data-aos-delay="550">
+                                Engineered with superior water resistance and long-lasting performance, River Stone waterproof plywood ensures style and strength in spaces exposed to moisture and humidity.
+                            </p>
+                            <a href="block-board.html" class="read-more fw-bold" data-aos="zoom-in" data-aos-delay="650">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- View All Button -->
+            <div class="text-center mt-5" data-aos="zoom-in" data-aos-delay="700">
+                <a href="blog.html" class="btn-theme px-4">View All</a>
+            </div>
+        </div>
+    </section>
+    <!-- blog -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ================= Footer Start ================= -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+
+                <!-- Quick Links -->
+                <div class="footer-col">
+                    <h4>QUICK LINKS</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Home</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> About Us</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Blogs</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Gallery</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Products -->
+                <div class="footer-col">
+                    <h4>PRODUCTS</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Plywood</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Shuttering Plywood</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Block Board</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Calibrated Board</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Fire Retardant Plywood</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Marine Plywood</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="footer-col con-footer">
+                    <h4>CONTACT</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Head Office: 123 Business Street, New Delhi, India</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Branch Office: 456 Industrial Area, Mumbai, India</p>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="footer-col newsletter">
+                    <h4>NEWSLETTER</h4>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Email Address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <p class="contact-info">Mobile: +91-18500722526</p>
+                    <p class="contact-info">Email: riverstoneply.com</p>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="footer-bottom">
+                <div class="logo">
+                    <img src="assests/images/logo/river-stone-logo.png" alt="Logo">
+
+                </div>
+                <p>Copyright © 2025 RIVER STONE PLY. All Rights Reserved. || Designed By Webads India</p>
+            </div>
+        </div>
+    </footer>
+    <!-- ================= Footer End ================= -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        const productCards = document.querySelectorAll('.product-card');
+        const lightbox = document.getElementById('productLightbox');
+        const lightboxImg = document.getElementById('lightboxImg');
+        const closeLightbox = document.getElementById('closeLightbox');
+
+        productCards.forEach(card => {
+            card.addEventListener('click', () => {
+                const imgSrc = card.querySelector('img').src;
+                lightboxImg.src = imgSrc;
+                lightbox.style.display = 'flex';
+            });
+        });
+
+        closeLightbox.addEventListener('click', () => {
+            lightbox.style.display = 'none';
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        const title = document.getElementById('slide-title');
+        const subtitle = document.getElementById('slide-subtitle');
+        const thumbs = document.querySelectorAll('.hero-thumbnails .thumb');
+
+        let current = 0;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active');
+                thumbs[i].classList.remove('active');
+                if (i === index) slide.classList.add('active');
+            });
+            thumbs[index].classList.add('active');
+
+            const activeSlide = slides[index];
+            title.textContent = activeSlide.dataset.title;
+            subtitle.textContent = activeSlide.dataset.subtitle;
+
+            // Slide container transform for smooth horizontal movement
+            document.querySelector('.hero-slider').style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        // Auto slide every 5 seconds
+        let slideInterval = setInterval(() => {
+            current = (current + 1) % slides.length;
+            showSlide(current);
+        }, 5000);
+
+        // Thumbnail click navigation
+        thumbs.forEach((thumb, i) => {
+            thumb.addEventListener('click', () => {
+                current = i;
+                showSlide(current);
+                clearInterval(slideInterval);
+                slideInterval = setInterval(() => {
+                    current = (current + 1) % slides.length;
+                    showSlide(current);
+                }, 5000);
+            });
+        });
+    </script>
+
+
+
+
+
+
+
+    <script>
+        const rspMenuBtn = document.getElementById('rsp-menu-btn');
+        const rspOverlay = document.getElementById('rspOverlay');
+        const rspCloseBtn = document.getElementById('rspClose');
+
+        rspMenuBtn.addEventListener('click', () => {
+            rspOverlay.classList.add('open');
+        });
+
+        rspCloseBtn.addEventListener('click', () => {
+            rspOverlay.classList.remove('open');
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        // Toggler functionality
+        const toggler = document.getElementById('menuToggler');
+        const overlay = document.getElementById('megaOverlay');
+        const closeBtn = document.getElementById('megaClose');
+
+        toggler.addEventListener('click', () => overlay.classList.add('active'));
+        closeBtn.addEventListener('click', () => overlay.classList.remove('active'));
+    </script>
+
+
+
+
+
+
+
+
+
+    <!-- bootstrap cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
+
+    <!-- Init (customize options below if chahiye) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 900, // animation duration in ms (smooth feel)
+                easing: 'ease-in-out', // easing style
+                once: true, // animation only once while scrolling down
+                mirror: false, // whether elements animate out while scrolling past them
+                offset: 120, // offset (in px) from the original trigger point
+                delay: 50, // global delay (ms) — individual elements can override
+                anchorPlacement: 'top-bottom' // where to trigger the animation
+            });
+        });
+    </script>
+
+    <!-- js script -->
+    <script src="assests/js/validation.js"></script>
+</body>
+
+</html>
