@@ -771,7 +771,7 @@ span {
 /* about us */
 
 .about-modern-fixed {
-    position: relative;
+    position: relative !important;
     /* padding: 8rem 0; */
     overflow: hidden;
     background: #fefefe;
