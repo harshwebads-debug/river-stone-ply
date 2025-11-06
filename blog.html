@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>River Stone Ply</title>
+    <link rel="stylesheet" href="assests/css/index.css">
+
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Montserrat (Headings) -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Open Sans (Content) -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+    <link rel="shortcut icon" href="assests/images/logo/river-stone-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- HEAD: AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+</head>
+
+<style>
+    .blog-section {
+        font-family: 'Poppins', sans-serif;
+        text-align: left;
+    }
+    
+    .blog-card {
+        background-color: var(--background-color);
+        border: 1px solid #e0e0e0;
+        overflow: hidden;
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .blog-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    }
+    
+    .blog-img-wrapper {
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .blog-img {
+        width: 100%;
+        display: block;
+        transition: transform 0.5s ease;
+    }
+    
+    .blog-card:hover .blog-img {
+        transform: scale(1.1);
+    }
+    
+    .blog-date {
+        font-size: 0.85rem;
+        color: var(--primary-color);
+        margin: 10px 15px 5px;
+        font-weight: 600;
+    }
+    
+    .blog-title {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: var(--secondary-color);
+        margin: 5px 15px 10px;
+    }
+    
+    .blog-excerpt {
+        font-size: 0.95rem;
+        color: var(--text-color);
+        margin: 0 15px 10px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        /* show only 2 lines */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+    .read-more {
+        color: var(--primary-color);
+        text-decoration: underline;
+        cursor: pointer;
+        font-weight: 600;
+        margin: 0 15px 15px;
+        transition: color 0.3s ease;
+    }
+    
+    .read-more:hover {
+        color: var(--secondary-color);
+    }
+    /* Responsive */
+    
+    @media (max-width: 992px) {
+        .blog-title {
+            font-size: 1.1rem;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .blog-card {
+            margin: 0 auto;
+        }
+    }
+</style>
+
+<body>
+
+    <!-- ===== Fixed Contact Icons ===== -->
+    <div class="fixed-icons">
+        <a href="tel:+18500722526" class="icon call" target="_blank"><i class="fas fa-phone-alt"></i></a>
+        <a href="mailto:riverstoneply.com" class="icon mail" target="_blank"><i class="fas fa-envelope"></i></a>
+    </div>
+
+
+
+    <!-- fix icons -->
+    <a href="https://wa.me/919914827500" target="_blank" class="whatsapp-btn">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- fix icons -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Topbar Contact + Social -->
+    <div class="topbar info-topbar">
+        <div class="info-left">
+            <span><i class="fas fa-phone-alt"></i>18500722526</span>
+            <span><i class="fas fa-envelope"></i>riverstoneply.com</span>
+        </div>
+        <div class="info-right">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+
+
+    <!-- desktop navbar -->
+    <!-- desktop navbar -->
+    <nav class="navbar">
+        <button id="menuToggler">☰</button>
+        <div class="navbar-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="about-us.html">About Us</a>
+
+            <!-- Products Dropdown -->
+            <div class="dropdown">
+                <a href="#" class="dropdown-toggle">Products</a>
+                <div class="dropdown-menu">
+                    <a href="plywood.html">Plywood</a>
+                    <a href="block-boards.html">Block Boards</a>
+                    <a href="doors.html">Doors</a>
+                    <a href="303-grade-plywood.html">Alternate 303 Grade</a>
+                </div>
+            </div>
+
+            <a href="blog.html">Blogs</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact-us.html">Contact Us</a>
+        </div>
+        <a class="navbar-brand" href="index.html">
+            <img src="assests/images/logo/river-stone-logo.png" alt="Logo">
+        </a>
+    </nav>
+
+
+    <!-- Mega overlay -->
+    <div class="mega-overlay" id="megaOverlay">
+        <button class="mega-close" id="megaClose">&times;</button>
+        <div class="mega-left">
+            <h3>Contact Us</h3>
+            <form>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <textarea placeholder="Message"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3488.426308420326!2d77.36980057536911!3d28.626572684351395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce550adec536d%3A0xfc9a748d99d8bd07!2sITHUM%20TOWER%2C%20GALAXY%20BUSINESS%20PARK%2C%20Block%20A%2C%20Industrial%20Area%2C%20Sector%2062%2C%20Noida%2C%20Uttar%20Pradesh%20201309!5e1!3m2!1sen!2sin!4v1759559079151!5m2!1sen!2sin"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </div>
+        <div class="mega-right">
+            <div class="logo"><img src="assests/images/logo/river-stone-logo.png" alt="Logo"></div>
+            <div class="mega-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="#">About Us</a>
+                <!-- Products Dropdown -->
+                <div class="dropdown">
+                    <a href="#" class="dropdown-toggle">Products</a>
+                    <div class="dropdown-menu">
+                        <a href="plywood.html">Plywood</a>
+                        <a href="block-boards.html">Block Boards</a>
+                        <a href="doors.html">Doors</a>
+                        <a href="303-grade-plywood.html">Alternate 303 Grade</a>
+                    </div>
+                </div>
+                <a href="blog.html">Blogs</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact-us.html">Contact Us</a>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+
+
+
+
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- desktop navbar -->
+
+
+
+
+
+
+
+    <!-- Mobile / Tablet Navbar -->
+    <nav class="rsp-nav">
+        <button id="rsp-menu-btn"><i class="fas fa-bars"></i></button>
+        <a href="#" class="rsp-logo"><img src="assests/images/logo/river-stone-logo.png" alt="River Stone Plywood"></a>
+    </nav>
+
+    <!-- Overlay Menu -->
+    <div class="rsp-overlay" id="rspOverlay">
+        <div class="rsp-overlay-wrapper">
+            <ul class="rsp-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li class="rsp-dropdown">
+                    <a href="#">Products <i class="fas fa-chevron-down"></i></a>
+                    <ul class="rsp-submenu">
+                        <li><a href="plywood.html">Plywood Type 1</a></li>
+                        <li><a href="block-boards.html">Block Boards</a></li>
+                        <li><a href="doors.html">Doors</a></li>
+                        <li><a href="303-grade-plywood.html">Alternate 303 Grade</a></li>
+                    </ul>
+                </li>
+                <li><a href="b'">Blogs</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+            <div class="rsp-socials">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <button class="rsp-close-btn" id="rspClose"><i class="fas fa-times"></i></button>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- ===== Reusable Hero Banner ===== -->
+    <section class="er-hero-banner d-flex align-items-center" style="background-image: url('assests/images/banner/blog-banner.jpg');">
+        <div class="er-hero-overlay"></div>
+
+        <div class="container er-hero-content text-center text-white">
+            <h1 class="er-hero-title">Our Blogs</h1>
+            <p class="er-hero-subtitle">
+                Explore the latest insights, trends, and innovations in the plywood and building material industry — stay informed with expert tips, design inspiration, and updates from River Stone.
+            </p>
+            <a href="about-us.html" class="btn-theme">Learn More</a>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Modern Blog Cards Section Start -->
+    <section class="blog-section py-5" style="background-color: var(--background-color);">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- Blog Card 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-card">
+                        <div class="blog-img-wrapper">
+                            <img src="https://st.hzcdn.com/simgs/pictures/living-rooms/the-pod-takt-studio-for-architecture-img~9e3189b901edfc05_14-8938-1-0589943.jpg" alt="Plywood Blog" class="blog-img">
+                        </div>
+                        <p class="blog-date">Nov 5, 2025</p>
+                        <h3 class="blog-title">Top Benefits of Using River Stone Plywood in Modern Interiors</h3>
+                        <p class="blog-excerpt">River Stone Ply offers unmatched durability and style, perfect for contemporary designs...</p>
+                        <p class="read-more">Read More</p>
+                    </div>
+                </div>
+
+                <!-- Blog Card 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-card">
+                        <div class="blog-img-wrapper">
+                            <img src="https://wesmarcdoors.com/wp-content/uploads/2025/10/Top-Features-to-Look-for-in-the-Best-Doors.png" alt="Doors Blog" class="blog-img">
+                        </div>
+                        <p class="blog-date">Oct 28, 2025</p>
+                        <h3 class="blog-title">Choosing the Right Doors: A Complete Guide by River Stone Ply</h3>
+                        <p class="blog-excerpt">Selecting the perfect door can elevate any room’s look and feel, combining strength and elegance...</p>
+                        <p class="read-more">Read More</p>
+                    </div>
+                </div>
+
+                <!-- Blog Card 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-card">
+                        <div class="blog-img-wrapper">
+                            <img src="https://www.duroply.in/blog/wp-content/uploads/2016/03/blockboard1.jpg" alt="Blockboards Blog" class="blog-img">
+                        </div>
+                        <p class="blog-date">Oct 20, 2025</p>
+                        <h3 class="blog-title">Why Blockboards from River Stone Ply Are a Game-Changer for Furniture</h3>
+                        <p class="blog-excerpt">Blockboards combine reliability and flexibility, making them ideal for furniture projects of all sizes...</p>
+                        <p class="read-more">Read More</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Modern Blog Cards Section End -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ================= Footer Start ================= -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+
+                <!-- Quick Links -->
+                <div class="footer-col">
+                    <h4>QUICK LINKS</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Home</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> About Us</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Blogs</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Gallery</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Products -->
+                <div class="footer-col">
+                    <h4>PRODUCTS</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Plywood</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Shuttering Plywood</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Block Board</a></li>
+                        <!-- <li><a href="#"><i class="fas fa-angle-right"></i> Calibrated Board</a></li> -->
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Flush Doors</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Marine Plywood</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="footer-col con-footer">
+                    <h4>CONTACT</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Head Office: 123 Business Street, New Delhi, India</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Branch Office: 456 Industrial Area, Mumbai, India</p>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="footer-col newsletter">
+                    <h4>NEWSLETTER</h4>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Email Address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <p class="contact-info">Mobile: +91-18500722526</p>
+                    <p class="contact-info">Email: riverstoneply.com</p>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="footer-bottom">
+                <div class="logo">
+                    <img src="assests/images/logo/river-stone-logo.png" alt="Logo">
+
+                </div>
+                <p>Copyright © 2025 RIVER STONE PLY. All Rights Reserved. || Designed By Webads India</p>
+            </div>
+        </div>
+    </footer>
+    <!-- ================= Footer End ================= -->
+
+
+    <script>
+        const rspMenuBtn = document.getElementById('rsp-menu-btn');
+        const rspOverlay = document.getElementById('rspOverlay');
+        const rspCloseBtn = document.getElementById('rspClose');
+
+        rspMenuBtn.addEventListener('click', () => {
+            rspOverlay.classList.add('open');
+        });
+
+        rspCloseBtn.addEventListener('click', () => {
+            rspOverlay.classList.remove('open');
+        });
+    </script>
+
+
+
+
+
+    <script>
+        // Toggler functionality
+        const toggler = document.getElementById('menuToggler');
+        const overlay = document.getElementById('megaOverlay');
+        const closeBtn = document.getElementById('megaClose');
+
+        toggler.addEventListener('click', () => overlay.classList.add('active'));
+        closeBtn.addEventListener('click', () => overlay.classList.remove('active'));
+    </script>
+
+
+
+
+
+
+
+
+
+    <!-- bootstrap cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
+
+    <!-- Init (customize options below if chahiye) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 900, // animation duration in ms (smooth feel)
+                easing: 'ease-in-out', // easing style
+                once: true, // animation only once while scrolling down
+                mirror: false, // whether elements animate out while scrolling past them
+                offset: 120, // offset (in px) from the original trigger point
+                delay: 50, // global delay (ms) — individual elements can override
+                anchorPlacement: 'top-bottom' // where to trigger the animation
+            });
+        });
+    </script>
+
+    <!-- js script -->
+    <script src="assests/js/validation.js"></script>
+</body>
+
+</html>

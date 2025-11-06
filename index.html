@@ -71,18 +71,33 @@
 
 
     <!-- desktop navbar -->
+    <!-- desktop navbar -->
     <nav class="navbar">
         <button id="menuToggler">☰</button>
         <div class="navbar-links">
-            <a href="#" class="active">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Products</a>
-            <a href="#">Blogs</a>
-            <a href="#">Gallery</a>
-            <a href="#">Contact Us</a>
+            <a href="index.html" class="active">Home</a>
+            <a href="about-us.html">About Us</a>
+
+            <!-- Products Dropdown -->
+            <div class="dropdown">
+                <a href="#" class="dropdown-toggle">Products</a>
+                <div class="dropdown-menu">
+                    <a href="plywood.html">Plywood</a>
+                    <a href="block-boards.html">Block Boards</a>
+                    <a href="doors.html">Doors</a>
+                    <a href="303-grade-plywood.html">Alternate 303 Grade</a>
+                </div>
+            </div>
+
+            <a href="blog.html">Blogs</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact-us.html">Contact Us</a>
         </div>
-        <a class="navbar-brand" href="#"><img src="assests/images/logo/river-stone-logo.png" alt="Logo"></a>
+        <a class="navbar-brand" href="index.html">
+            <img src="assests/images/logo/river-stone-logo.png" alt="Logo">
+        </a>
     </nav>
+
 
     <!-- Mega overlay -->
     <div class="mega-overlay" id="megaOverlay">
@@ -104,12 +119,21 @@
         <div class="mega-right">
             <div class="logo"><img src="assests/images/logo/river-stone-logo.png" alt="Logo"></div>
             <div class="mega-links">
-                <a href="#" class="active">Home</a>
+                <a href="index.html" class="active">Home</a>
                 <a href="#">About Us</a>
-                <a href="#">Products</a>
-                <a href="#">Blogs</a>
-                <a href="#">Gallery</a>
-                <a href="#">Contact Us</a>
+                <!-- Products Dropdown -->
+                <div class="dropdown">
+                    <a href="#" class="dropdown-toggle">Products</a>
+                    <div class="dropdown-menu">
+                        <a href="plywood.html">Plywood</a>
+                        <a href="block-boards.html">Block Boards</a>
+                        <a href="doors.html">Doors</a>
+                        <a href="303-grade-plywood.html">Alternate 303 Grade</a>
+                    </div>
+                </div>
+                <a href="blog.html">Blogs</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact-us.html">Contact Us</a>
             </div>
             <div class="social-icons">
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -143,19 +167,20 @@
     <div class="rsp-overlay" id="rspOverlay">
         <div class="rsp-overlay-wrapper">
             <ul class="rsp-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
                 <li class="rsp-dropdown">
                     <a href="#">Products <i class="fas fa-chevron-down"></i></a>
                     <ul class="rsp-submenu">
-                        <li><a href="#">Plywood Type 1</a></li>
-                        <li><a href="#">Plywood Type 2</a></li>
-                        <li><a href="#">Plywood Type 3</a></li>
+                        <li><a href="plywood.html">Plywood Type 1</a></li>
+                        <li><a href="block-boards.html">Block Boards</a></li>
+                        <li><a href="doors.html">Doors</a></li>
+                        <li><a href="303-grade-plywood.html">Alternate 303 Grade</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Blogs</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="b'">Blogs</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
             </ul>
             <div class="rsp-socials">
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -251,7 +276,6 @@
             <div class="thumb" data-index="2" style="background-image: url('assests/images/banner/ban-4.jpg');"></div>
         </div>
     </section>
-    <!-- hero section -->
 
 
 
@@ -259,9 +283,10 @@
 
 
 
-    <!-- about us -->
-    <section class="about-modern-fixed position-relative" data-aos="fade-in" data-aos-duration="1000">
-        <!-- Background Shapes -->
+
+
+    <!-- <section class="about-modern-fixed position-relative" data-aos="fade-in" data-aos-duration="1000">
+     
         <div class="about-shapes">
             <div class="shape shape-1" data-aos="zoom-in" data-aos-delay="100"></div>
             <div class="shape shape-2" data-aos="zoom-in" data-aos-delay="200"></div>
@@ -270,10 +295,10 @@
 
         <div class="container-fluid about-container">
             <div class="row align-items-stretch">
-                <!-- Left Background Image -->
+          
                 <div class="col-lg-6 col-md-none about-left-image" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="150"></div>
 
-                <!-- Right Content -->
+              
                 <div class="col-lg-6 col-md-12 about-content-modern" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
 
                     <h2 data-aos="fade-up" data-aos-delay="250">
@@ -333,8 +358,99 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- about us -->
+
+
+
+
+    <!-- ===== About Us Section ===== -->
+    <section class="about-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- Left Side: Image Layout -->
+                <div class="col-lg-6 about-images position-relative mb-5 mb-lg-0">
+                    <div class="img-stack">
+                        <!-- Left Image -->
+                        <div class="img-box img-left">
+                            <img src="assests/images/about-us/abt-2.jpg" class="img-fluid" alt="Factory">
+                        </div>
+
+                        <!-- Right Image -->
+                        <div class="img-box img-right">
+                            <img src="assests/images/about-us/abt-3.jpg" class="img-fluid" alt="Warehouse">
+                        </div>
+
+                        <!-- Center Overlapping Image -->
+                        <div class="img-box img-center">
+                            <img src="assests/images/about-us/abt-1.jpg" class="img-fluid" alt="Manufacturing">
+                            <div class="img-text">
+                                <h5>Transforming Wood,<br>Redefining Excellence</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side: Content (Unchanged) -->
+                <div class="col-lg-6 about-content ps-lg-5">
+                    <h2 class="about-title mb-3">About River Stone Industries</h2>
+                    <p class="about-text mb-4">
+                        River Stone Industries is a leading name in the plywood and wood panel industry, driven by innovation, craftsmanship, and sustainability. With advanced technology and a commitment to excellence, we deliver products that redefine durability, design, and
+                        reliability for modern interiors.
+                    </p>
+
+                    <div class="row about-highlights gy-3">
+                        <div class="col-sm-6 d-flex align-items-start">
+                            <div class="icon-box">
+                                <i class="fa-solid fa-industry"></i>
+                            </div>
+                            <div>
+                                <h5>Advanced Manufacturing</h5>
+                                <p>State-of-the-art production facility ensuring top-grade plywood output.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 d-flex align-items-start">
+                            <div class="icon-box">
+                                <i class="fa-solid fa-leaf"></i>
+                            </div>
+                            <div>
+                                <h5>Eco-Conscious Production</h5>
+                                <p>Committed to sustainable practices and responsible sourcing.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 d-flex align-items-start">
+                            <div class="icon-box">
+                                <i class="fa-solid fa-award"></i>
+                            </div>
+                            <div>
+                                <h5>Quality Certified</h5>
+                                <p>Products tested and certified for superior strength and performance.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 d-flex align-items-start">
+                            <div class="icon-box">
+                                <i class="fa-solid fa-users"></i>
+                            </div>
+                            <div>
+                                <h5>Trusted by Professionals</h5>
+                                <p>Preferred by architects, builders, and interior designers nationwide.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="about-us.html" class="btn btn-primary mt-4">Learn More</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
 
 
 
@@ -354,7 +470,7 @@
                 <h2 class="heading-border">Our Products</h2>
             </div>
 
-            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">
+            <p class="section-subtitlee" data-aos="fade-up" data-aos-delay="200">
                 Explore our premium range of products designed for durability, style, and unmatched quality. From classic plywood to innovative alternatives, each product ensures excellence and reliability.
             </p>
 
@@ -441,27 +557,27 @@
         <div class="features-container">
             <div class="feature-box" data-aos="zoom-in-up" data-aos-delay="300">
                 <img src="https://plywood.royaletouche.com/_next/image?url=https%3A%2F%2Fcms-plywood.royaletouche.com%2Fuploads%2Fgurjan_face_plywood_copy_5191d923c3.jpg&w=3840&q=75" alt="Burma Gurjan Face" />
-                <p>Burma Gurjan Face</p>
+                <p style="text-transform: capitalize;">Burma Gurjan Face</p>
             </div>
 
             <div class="feature-box" data-aos="zoom-in-up" data-aos-delay="400">
                 <img src="https://cpimg.tistatic.com/05127218/b/5/Waterproof-Plywood.jpg" alt="100% Boiling Water Proof" />
-                <p>100% Boiling Water Proof</p>
+                <p style="text-transform: capitalize;">100% Boiling Water Proof</p>
             </div>
 
             <div class="feature-box" data-aos="zoom-in-up" data-aos-delay="500">
                 <img src="https://wigwamply.com/wp-content/uploads/2025/03/Block-Board-A-Strong-and-Versatile-Alternative-to-Plywood.jpg" alt="Alternate Core" />
-                <p>Alternate Core</p>
+                <p style="text-transform: capitalize;">Alternate Core</p>
             </div>
 
             <div class="feature-box" data-aos="zoom-in-up" data-aos-delay="600">
                 <img src="https://cms-plywood.royaletouche.com/uploads/termite_proof_fainal_copy_0ea70be2f8.jpg" alt="100% Termite Proof" />
-                <p>100% Termite Proof</p>
+                <p style="text-transform: capitalize;">100% Termite Proof</p>
             </div>
 
             <div class="feature-box" data-aos="zoom-in-up" data-aos-delay="700">
                 <img src="https://wigwamply.com/wp-content/uploads/2025/03/Plywood-Furniture-Durable-Stylish-Cost-Effective-Solutions.jpg" alt="15 Years Guarantee" />
-                <p>15 Years Guarantee</p>
+                <p style="text-transform: capitalize;">15 Years Guarantee</p>
             </div>
         </div>
     </section>
