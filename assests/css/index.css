@@ -2292,3 +2292,65 @@
         }
     }
     /* about us page end */
+    /* Default: sab images visible on large screens */
+    
+    .img-box {
+        display: block;
+    }
+    /* Small devices (below 768px) par sirf center image visible */
+    
+    @media (max-width: 767px) {
+        .img-left,
+        .img-right {
+            display: none !important;
+        }
+        .img-center {
+            display: block !important;
+            margin: 0 auto;
+            position: initial !important;
+        }
+        .img-center img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            bottom: 0px;
+        }
+        .img-text {
+            text-align: center;
+            /* display: none; */
+        }
+        .img-box {
+            width: 100% !important;
+            height: 100% !important;
+        }
+    }
+    
+    @media (max-width: 900px) {
+        .hero-content {
+            top: 30%;
+        }
+    }
+    
+    @media (max-width: 550px) {
+        .hero-content {
+            top: 23%;
+        }
+        .er-hero-btn {
+            padding: 10px;
+        }
+    }
+    
+    @media (max-width: 350px) {
+        .hero-content {
+            top: 19%;
+        }
+        .er-hero-btn {
+            padding: 10px;
+        }
+        .hero-content h1 {
+            font-size: 1.8rem !important;
+        }
+        .hero-content p {
+            font-size: 20px;
+        }
+    }
