@@ -266,8 +266,8 @@
         top: 100%;
         left: 0;
         background: #ffffff;
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-        min-width: 180px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.592);
+        width: 200px;
         z-index: 1000;
         transition: all 0.3s ease;
         border-top: 3px solid var(--primary-color);
