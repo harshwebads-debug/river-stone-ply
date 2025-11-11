@@ -767,7 +767,7 @@
     .er-hero-banner {
         position: relative;
         width: 100%;
-        min-height: 65vh;
+        min-height: 80vh;
         /* taller for impact */
         background-size: cover;
         background-position: center;
@@ -2192,7 +2192,7 @@
     .hero-banner {
         position: relative;
         overflow: hidden;
-        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/about-us/team-img.jpg') center/cover no-repeat;
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/about-us/team-img.jpeg') center/cover no-repeat;
         z-index: 1;
         min-height: 500px;
         display: flex;
